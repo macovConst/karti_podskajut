@@ -14,6 +14,27 @@
   <body class="page theme_dark">
     <header class="header">
       <h1 class="heading content-section header_title">Карты подскажут</h1>
+      <nav class="header__menu content-section">
+        <div class="header__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
+            <use href="./images/logo.svg#logo"></use>
+          </svg>
+        </div>
+        <ul class="header__theme-toggler">
+          <li>
+            <button class="
+            header__theme-button header__theme-button_type_dark
+            header__theme-button_is-active">Темная</button>
+          </li>
+          <li>
+            <button class="
+            header__theme-button 
+            header__theme-button_type_light"
+            disabled
+            >Светлая</button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="content content-section">
       <h2 class="heading content_title">Креативный подход к решению проблем</h2>
@@ -29,6 +50,16 @@
         <p class="content_paragraph">
           Тут могло бы быть что-то про пользу игры в «Дурака» или о высших арканах Таро, но у нас на примете другая колода. Она называется Oblique Strategies, или «Обходные стратегии». Первую колоду ещё в 1975 году создали композитор, музыкальный продюсер и один из основателей жанра эмбиент Брайан Ино и мультимедиа-художник Питер Шмидт.</p>
       </div>
+      <figure class="content__figure">
+        <picture>
+          <source srcset="./images/cards-1x.avif" type="image/avif">
+          <source srcset="./images/cards-1x.webp" type="image/webp">
+          <img class="content__picture" loading="lazy" src="./images/cards-1x.png" alt="Колода Oblique Strategies">
+        </picture> 
+        <figcaption class="content__picture-caption">
+          Колода Oblique Strategies
+        </figcaption>
+      </figure> 
       <div class="content_text-block">
         <p class="content_paragraph">
           Oblique Strategies в основном используют музыканты, но колода подходит для преодоления творческого кризиса в любой сфере. Её рекомендуют писателям, продакт-менеджерам, художникам и разработчикам.</p>
@@ -47,6 +78,11 @@
           И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные <a href="https://obliquestrategies.ca/">веб-сайты</a> с диджитал-эквивалентами карточек и приложения для <a href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011">iOS</a> и <a href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1">Android</a>.
         </p>
       </div>
+      <article class="content__card">
+        <h3 class="content__card-title heading"> Use an <wbr> <span class="colored-text">old idea</span>
+        </h3>
+        <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
+      </article>
       <h2 class="heading content_title">Кто пользовался Oblique Strategies</h2>
       <div class="content_text-block">
         <p class="content_paragrph">
@@ -67,9 +103,11 @@
         </p>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__copyright">VЁRSTKA</p>
+    </footer>
 
     <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
-    <!-- <script src="./scripts/theme-changer.js"></script> -->
+    <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>
